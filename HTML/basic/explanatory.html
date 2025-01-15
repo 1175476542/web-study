@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网页</title>
+</head>
+<style>
+    .title{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        font-size: 50px;
+        color:darkseagreen;
+    }
+</style>
+<body>
+<h1 class="title">第一个网页</h1>
+<h2 style="text-align: center;color:red;font-size: 20px">第一个网页</h2>
+<button class="btn">
+    点击输出
+</button>
+
+</body>
+<script>
+    window.onload = function (){
+        let btn = document.getElementsByClassName("btn")
+        btn.onclick = function () {
+            console.log("点击事件")
+        }
+    }
+</script>
+</html>
